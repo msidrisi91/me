@@ -1,4 +1,4 @@
-document.getElementsByTagName("BODY")[0].addEventListener("wheel", myFunction);
+document.getElementsByID("page1")[0].addEventListener("wheel", myFunction);
 
 function myFunction(e) {
     console.log(e.deltaY);
@@ -9,5 +9,6 @@ function myFunction(e) {
     } else if(e.deltaY > 0){
        // document.getElementById('page1').style.display = "none";
         $( "#page1" ).fadeOut( "slow", function() {});
+        window.location.replace("about.html");
     }
 }
