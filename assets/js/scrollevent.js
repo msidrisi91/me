@@ -1,4 +1,4 @@
-document.getElementsByID("page1")[0].addEventListener("wheel", myFunction);
+document.getElementById("page1").addEventListener("wheel", myFunction);
 
 function myFunction(e) {
     console.log(e.deltaY);
